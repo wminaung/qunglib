@@ -23,6 +23,7 @@ const classesAry = () => {
 const getData = () => {
   axios
     .post("http://localhost:3000", { data: JSON.stringify(classesAry()) })
-    .then(function (response) {});
+    .then(function (response) {})
+    .catch((err) => console.log(err));
 };
 getData();
