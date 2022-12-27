@@ -16,7 +16,6 @@ export const createCss = (classNames) => {
 
       case "text-center":
         cssStrToPushAry(classAry, className, "text-align", "center");
-
         break;
 
       // background color
