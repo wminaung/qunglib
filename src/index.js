@@ -22,7 +22,12 @@ export const createCss = (classNames) => {
       // background color
       case "bg-black":
         cssStrToPushAry(classAry, className, "background-color", "black");
-
+        break;
+      case "bg-blue":
+        cssStrToPushAry(classAry, className, "background-color", "blue");
+        break;
+      case "bg-green":
+        cssStrToPushAry(classAry, className, "background-color", "green");
         break;
 
       // font family
@@ -50,12 +55,12 @@ export const createCss = (classNames) => {
   return classAry;
 };
 
-let returnCss = "";
-const uniqueAry = [
-  ...new Set(["bg-black", "text-red", "font-mono", "text-center", "bg-black"]),
-];
-createCss(uniqueAry).forEach((className) => {
-  returnCss += className;
-});
+// let returnCss = "";
+// const uniqueAry = [
+//   ...new Set(["bg-black", "text-red", "font-mono", "text-center", "bg-black"]),
+// ];
+// createCss(uniqueAry).forEach((className) => {
+//   returnCss += className;
+// });
 
-console.log(returnCss);
+// console.log(returnCss);
