@@ -1,0 +1,15 @@
+{
+  "name": "qunglib",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node.exe ./src/index.js >  ./dist/style.css"
+  },
+  "keywords": [
+    "csslib"
+  ],
+  "author": "wminaung",
+  "license": "ISC"
+}
